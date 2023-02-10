@@ -1,0 +1,26 @@
+.clients {
+   padding: 50px 0;
+		&__container {
+		}
+
+		&__row {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: wrap;
+         margin: 0 -15px;
+		}
+
+		&__column {
+         flex: 0 1 16.666%;
+         padding: 15px;
+		}
+
+		&__item {
+         text-align: center;
+         min-width: 100px;
+         img {
+            width: 100%;
+         }
+		}
+}

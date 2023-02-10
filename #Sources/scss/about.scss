@@ -1,0 +1,133 @@
+.about {
+   padding: 100px 0;
+   background-color: #fff;
+
+   @media(max-width: 950px) {
+      padding: 50px 0;  
+   }
+   @media(max-width: 680px) {
+      padding: 20px 0;  
+   }
+
+		&__header {
+         margin: 0 0 100px 0;
+
+         @media(max-width: 950px) {
+            margin: 0 0 50px 0;
+         }
+
+         @media(max-width: 680px) {
+            margin: 0 0 30px 0;
+         }
+		}
+
+		&__row {
+         display: flex;
+         align-items: flex-start;
+
+         @media(max-width: 950px) {
+            flex-direction: column-reverse;
+            align-items: stretch;
+         }
+		}
+
+		&__video {
+         flex: 0 0 57%;
+         position: relative;
+         padding: 0 0 42.22% 0; // 442 / 1046 * 100
+
+         iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+         }
+
+         @media(max-width: 950px) {
+            padding: 0 0 56% 0; 
+         }
+		}
+
+		&__content {
+         flex: 1 1 auto;
+         padding: 20px 0 0 120px;
+
+         @media(max-width: 1080px) {
+            padding: 0 0 0 60px;
+         }
+
+         @media(max-width: 950px) {
+            padding: 0;
+            margin: 0 0 30px 0;
+         }
+     
+		}
+
+		&__text {
+         text-align: left;
+         margin:  0 0 50px 0;
+
+         @media(max-width: 950px) {
+            margin: 0 0 35px 0;
+
+            h2 {
+               font-size: 30px;
+            }
+         }
+         @media(max-width: 680px) {
+            h2 {
+               font-size: 25px;
+            }
+         }
+         @media(max-width: 365px) {
+            h2 {
+               font-size: 21px;
+            }
+         }
+		}
+}
+
+.item-about {
+   display: flex;
+   
+   &:not(:last-child) {
+      margin: 0 0 30px 0;
+   }
+
+		&__icon {
+         flex: 0 0 32px;
+         
+		}
+
+		&__body {
+         flex: 1 1 auto;
+         padding: 0 0 0 20px;
+		}
+
+		&__title {
+         font-size: 16px;
+         font-weight: 700;
+         line-height: 150%;
+         letter-spacing: 0.10000000149011612px;
+         color: #252B42;
+         margin: 0 0 5px 0;
+
+         @media(max-width: 460px) {
+            font-size: 14px;
+         }
+		}
+
+		&__subtitle {
+         font-size: 14px;
+         font-weight: 600;
+         line-height: 171%;
+         letter-spacing: 0.20000000298023224px;
+         color: #737373;
+
+         @media(max-width: 460px) {
+            font-size: 12px;
+         }
+		}
+}
